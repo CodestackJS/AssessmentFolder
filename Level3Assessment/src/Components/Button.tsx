@@ -4,16 +4,16 @@ import { Children } from "react";
 interface ButtonProps{
     btnClick:() => void;
     children: string;
-    color: string;
+    //color: string;
    
     
 }
 
 
-const Button = ({btnClick}:ButtonProps) => {
+const Button = ({btnClick, children}:ButtonProps) => {
   return (
     <>
-    <button onClick={btnClick} >Button</button>
+    <button onClick={btnClick} >{children}</button>
     
     
     </>

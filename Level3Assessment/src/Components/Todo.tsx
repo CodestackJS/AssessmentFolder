@@ -4,7 +4,7 @@ import Counter from "./Counter"
 
 interface TodoList {
     id: number;
-    name: string;
+    title: string;
 }
 
 
@@ -28,8 +28,11 @@ useEffect(() => {
     <h1 className="text-center">Practice Assessment</h1>
     <Counter/>
     {/* <Button btnClick={}>increase</Button> */}
-    
-    
+    <ul>
+    {todo.map((todo) =>(
+        <li key={todo.id}>{todo.title}</li>
+    ))}
+    </ul>
     </>
   )
 }

@@ -13,7 +13,7 @@ const Counter = () => {
         }
 
 
-  return (
+  return ( 
     <>
  
     <Button btnClick={increment}>increase</Button>
